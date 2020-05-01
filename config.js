@@ -1,5 +1,5 @@
 module.exports = {
-  name: "Develoop IOT",
+  name: "Develoop-IOT",
   platform: "arduino-esp32",
   title: "Develoop IOT",
   description: "Kivvi AR-GE",
@@ -8,5 +8,5 @@ module.exports = {
   email: "bilgi@kivvi.com.tr",
   git: "https://market.kivvi.com.tr",
   image: "/static/display.jpg",
-  version: "1.0.0",
+  version: "1.0.0.1",
 };

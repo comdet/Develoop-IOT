@@ -1,5 +1,5 @@
-C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\build\ff-ff-ff-ff-ff-ff\main.o: \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\build\ff-ff-ff-ff-ff-ff\main.cpp \
+C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\build\ff-ff-ff-ff-ff-ff\main.o: \
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\build\ff-ff-ff-ff-ff-ff\main.cpp \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\inc/freertos/FreeRTOS.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\newlib/sys/reent.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\newlib/_ansi.h \
@@ -128,4 +128,4 @@ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\build\ff-ff-f
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/IPAddress.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/HardwareSerial.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/Esp.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\include/pins_arduino.h
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include/pins_arduino.h

@@ -38,7 +38,7 @@ void motorSetup()
 
 
 
-void fwd()
+void bwd()
 {
   digitalWrite(AIN1, HIGH); // Motor 1' in yönünü ileri olarak aktifleştir
   digitalWrite(AIN2, LOW);  // Motor 1' in ters hareketini pasifleştir.
@@ -46,7 +46,7 @@ void fwd()
   digitalWrite(BIN2, HIGH);  // Motor 1' in ters hareketini pasifleştir.
 }
 
-void bwd()
+void fwd()
 {
   digitalWrite(AIN1, LOW); // Motor 1' in yönünü ileri olarak aktifleştir
   digitalWrite(AIN2, HIGH);  // Motor 1' in ters hareketini pasifleştir.
@@ -54,7 +54,7 @@ void bwd()
   digitalWrite(BIN2, LOW);  // Motor 1' in ters hareketini pasifleştir.
 }
 
-void lft()
+void rgt()
 {
   digitalWrite(AIN1, HIGH); // Motor 1' in yönünü ileri olarak aktifleştir
   digitalWrite(AIN2, LOW);  // Motor 1' in ters hareketini pasifleştir.
@@ -62,7 +62,7 @@ void lft()
   digitalWrite(BIN2, LOW);  // Motor 1' in ters hareketini pasifleştir.
 }
 
-void lft0() // sağ tam
+void rgt0() // sağ tam
 {
   digitalWrite(AIN1, HIGH); // Motor 1' in yönünü ileri olarak aktifleştir
   digitalWrite(AIN2, LOW);  // Motor 1' in ters hareketini pasifleştir.
@@ -70,7 +70,7 @@ void lft0() // sağ tam
   digitalWrite(BIN2, LOW);  // Motor 1' in ters hareketini pasifleştir.
 }
 
-void rgt()
+void lft()
 {
   digitalWrite(AIN1, LOW); // Motor 1' in yönünü ileri olarak aktifleştir
   digitalWrite(AIN2, LOW);  // Motor 1' in ters hareketini pasifleştir.
@@ -78,7 +78,7 @@ void rgt()
   digitalWrite(BIN2, HIGH);  // Motor 1' in ters hareketini pasifleştir.
 }
 
-void rgt0()
+void lft0()
 {
   digitalWrite(AIN1, LOW); // Motor 1' in yönünü ileri olarak aktifleştir
   digitalWrite(AIN2, HIGH);  // Motor 1' in ters hareketini pasifleştir.

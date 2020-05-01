@@ -1,5 +1,5 @@
-C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\build\ff-ff-ff-ff-ff-ff\u8log.o: \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\include\clib\u8log.c \
+C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\build\ff-ff-ff-ff-ff-ff\u8log.o: \
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include\clib\u8log.c \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\newlib/stdint.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\newlib/machine/_default_types.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\newlib/sys/features.h \
@@ -17,5 +17,5 @@ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\build\ff-ff-f
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\newlib/sys/lock.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\newlib/sys/cdefs.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\newlib/sys/string.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\include\clib\u8x8.h \
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include\clib\u8x8.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\newlib/limits.h

@@ -1,4 +1,4 @@
-C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\build\ff-ff-ff-ff-ff-ff\KBProTime.o: \
+C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\build\ff-ff-ff-ff-ff-ff\KBProTime.o: \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\include\KBProTime.cpp \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\include\KBProTime.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/Arduino.h \
@@ -128,4 +128,4 @@ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\build\ff-ff-f
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/IPAddress.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/HardwareSerial.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/Esp.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\include/pins_arduino.h
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include/pins_arduino.h

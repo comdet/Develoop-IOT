@@ -1,6 +1,6 @@
-C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\build\ff-ff-ff-ff-ff-ff\U8g2lib.o: \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\include\U8g2lib.cpp \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\include\U8g2lib.h \
+C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\build\ff-ff-ff-ff-ff-ff\U8g2lib.o: \
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include\U8g2lib.cpp \
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include\U8g2lib.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/Arduino.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\newlib/stdint.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\newlib/machine/_default_types.h \
@@ -128,9 +128,9 @@ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\build\ff-ff-f
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/IPAddress.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/HardwareSerial.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/Esp.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\include/pins_arduino.h \
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include/pins_arduino.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/Print.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\include\U8x8lib.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\include\clib/u8x8.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\include\clib/u8g2.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\include\clib/u8x8.h
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include\U8x8lib.h \
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include\clib/u8x8.h \
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include\clib/u8g2.h \
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include\clib/u8x8.h

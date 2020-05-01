@@ -1,4 +1,4 @@
-C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\build\ff-ff-ff-ff-ff-ff\MQTT.o: \
+C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\build\ff-ff-ff-ff-ff-ff\MQTT.o: \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\include\MQTT.cpp \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\include\MQTT.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\newlib/stdint.h \

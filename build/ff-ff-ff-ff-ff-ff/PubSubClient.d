@@ -1,4 +1,4 @@
-C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\build\ff-ff-ff-ff-ff-ff\PubSubClient.o: \
+C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\build\ff-ff-ff-ff-ff-ff\PubSubClient.o: \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\include\PubSubClient.cpp \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\include\PubSubClient.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/pgmspace.h \
@@ -110,6 +110,6 @@ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\build\ff-ff-f
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/IPAddress.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/HardwareSerial.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/Esp.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop\ IOT\include/pins_arduino.h \
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include/pins_arduino.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\include\MQTT.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/Client.h

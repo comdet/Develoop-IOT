@@ -63,7 +63,7 @@ Blockly.JavaScript['kivvi_screen_toscreen'] = function(block) {
 
 Blockly.JavaScript['bt_string'] = function(block) {
   var code = 'bluetoothString()';
-  return code;
+  return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
 Blockly.JavaScript['bt_setup'] = function(block) {

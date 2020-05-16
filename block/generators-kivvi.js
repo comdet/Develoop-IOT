@@ -15,13 +15,6 @@ module.exports = function (Blockly) {
 	return code;
 	};
 	
-	Blockly.JavaScript['kivvi_delay'] = function(block) {
-		var content = Blockly.JavaScript.valueToCode(block, 'CONTENT', Blockly.JavaScript.ORDER_NONE);
-		let code = 'delay('+content+');';
-
-	return code;
-	};
-	
 	Blockly.JavaScript['kivvi_screen_setup'] = function(block) {
 		let code = 
 			`#EXTINC#include "U8g2lib.h"#END

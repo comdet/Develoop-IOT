@@ -3,13 +3,10 @@
 #include <Wire.h>
 #include "BluetoothSerial.h"
 #include "moves.c"
-#include <Tone32.h>
 
 
 U8G2_SSD1306_128X64_NONAME_F_SW_I2C u8g2(U8G2_R0, 15, 4, 16);
 BluetoothSerial SerialBT;
-#define BUZZER_PIN 2
-#define BUZZER_CHANNEL 0
 
 void toScreen(int satir, String wrd)
   			{
@@ -41,14 +38,10 @@ String bluetoothString() //char olarak gelen message strin haline getiriliyor
 void setup()
 {
   u8g2.begin();
-pinMode(19, OUTPUT);
-pinMode(23, OUTPUT);
   SerialBT.begin("BT NAME");motorSetup();
 }
 void loop()
 {
-    		digitalWrite(23, HIGH);delay(100);
-  		digitalWrite(19, LOW);u8g2.clearBuffer();toScreen(1, String("Hello World!"));u8g2.sendBuffer();fwd();stp();
-  	tone(BUZZER_PIN,NOTE_FS7,500,BUZZER_CHANNEL);
+    toScreen(1, String("dsfsfsfsfsf"));fwd();
   
 }

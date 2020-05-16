@@ -140,6 +140,4 @@ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\build\ff-ff-ff
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\libraries_include/BluetoothSerial.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\inc/esp_spp_api.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\inc/esp_bt_defs.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include/moves.c \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include/Tone32.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include/pitches.h
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include/moves.c

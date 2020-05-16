@@ -6,7 +6,7 @@ module.exports = {
   author: "Kivvi AR-GE",
   website: "https://kivvi.com.tr",
   email: "bilgi@kivvi.com.tr",
-  git: "https://market.kivvi.com.tr",
+  git: "https://github.com/halildilaver/Develoop-IOT",
   image: "/static/display.jpg",
-  version: "1.0.0.1",
+  version: "1.1.170520",
 };

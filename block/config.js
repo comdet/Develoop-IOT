@@ -1,28 +1,11 @@
+const dirIcon = Vue.prototype.$global.board.board_info.dir;
+
 module.exports = {
   blocks: [ // use "blocks : [ " in normally situation but this need to override base block from esp-idf platforms
-    {
-      name: "Genel",
-      color: "230",
-      icon: "/static/icons/icons8_genealogy_96px.png",
-      blocks: [
-		"kivvi_led",
-		{
-		xml:`<block type="kivvi_delay" x="13" y="38">
-                <field name="TYPE">DEC</field>
-                <value name="CONTENT">
-                    <block type="math_number">
-                        <field name="NUM">0</field>
-                    </block>
-                </value>
-            </block>`
-		},
-		"kivvi_battery_read"
-      ]
-    },
 	{
       name: "Ekran",
       color: "230",
-      icon: "/static/icons/display.png",
+      icon: `file:///${dirIcon}/static/icons/screen.png`,
       blocks: [
 		"kivvi_screen_setup",
 		{
@@ -42,18 +25,19 @@ module.exports = {
 	{
       name: "Sensörler",
       color: "230",
-      icon: "/static/icons/icons8_thermometer_automation_96px.png",
+      icon: `file:///${dirIcon}/static/icons/sensor.png`,
       blocks: [
 		"kivvi_hcsr04p",
 		"kivvi_dist",
 		"kivvi_ldr",
-		"kivvi_qrd1117"
+		"kivvi_qrd1117",
+		"kivvi_battery_read"
       ]
     },
 	{
       name: "Bluetooth",
       color: "230",
-      icon: "/static/icons/icons8_bluetooth_2_96px.png",
+      icon: `file:///${dirIcon}/static/icons/bluetooth.png`,
       blocks: [
 		"bt_setup",
 		"bt_string"
@@ -62,7 +46,7 @@ module.exports = {
 	{
       name: "Motor",
       color: "230",
-      icon: "/static/icons/icons8_idea_96px.png",
+      icon: `file:///${dirIcon}/static/icons/motor.png`,
       blocks: [
 		"kivvi_motor_setup",
 		"kivvi_motor_dir"
@@ -71,17 +55,17 @@ module.exports = {
 	{
       name: "Müzik",
       color: "230",
-      icon: "/static/icons/icons8_musical_notes_96px.png",
+      icon: `file:///${dirIcon}/static/icons/song.png`,
       blocks: [
 		"kivvi_buzzer32"
       ]
     },
 	{
 	  name: "RGB LED",
-	  index: 20,
 	  color: "65",
-	  icon: "/static/icons/icons8_workflow_128px.png",
+	  icon: `file:///${dirIcon}/static/icons/led.png`,
 	  blocks: [
+		"kivvi_led",
 		{
 		  xml:
 			`<block type="kivvi_rgb_begin">

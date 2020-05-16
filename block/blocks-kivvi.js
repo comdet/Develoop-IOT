@@ -1,3 +1,5 @@
+const dirIcon = Vue.prototype.$global.board.board_info.dir;
+
 module.exports = function (Blockly) {
 	'use strict';
 
@@ -6,10 +8,10 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['kivvi_led'] = {
 		init: function() {
 			this.appendDummyInput()
-				.appendField("Ayarla")
-				.appendField(new Blockly.FieldDropdown([["SOL_LED","23"], ["SAĞ_LED","19"]]), "WAY")
-				.appendField("Durum")
-				.appendField(new Blockly.FieldDropdown([["YUKSEK","HIGH"], ["ALCAK","LOW"]]), "STATUS");
+				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/ledmini.png`,20,20,"*"))
+				.appendField(new Blockly.FieldDropdown([["SOL","23"], ["SAĞ","19"]]), "WAY")
+				.appendField("Ledi")
+				.appendField(new Blockly.FieldDropdown([["YAK","HIGH"], ["SÖNDÜR","LOW"]]), "STATUS");
 			this.setInputsInline(true);
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
@@ -19,19 +21,6 @@ module.exports = function (Blockly) {
 		}
 	};
 	
-	Blockly.Blocks['kivvi_delay'] = {
-		init: function() {
-			this.appendValueInput("CONTENT","DELAY")
-				.setCheck("Number")
-				.appendField("Gecikme");
-			this.setInputsInline(true);
-			this.setPreviousStatement(true);
-			this.setNextStatement(true, null);
-			this.setColour(basic_colour);
-			this.setTooltip("Gecikme eklemek için kullanılır.");
-			this.setHelpUrl("http://www.kivvi.com.tr");
-		}
-	};
 	
 	Blockly.Blocks['kivvi_dist'] = {
 		init: function() {
@@ -45,6 +34,7 @@ module.exports = function (Blockly) {
 			this.setHelpUrl("http://kivblocks.kivvi.com.tr");
 		}
 	};
+	
 	
 	Blockly.Blocks['kivvi_motor_setup'] = {
 		init: function() {
@@ -61,10 +51,11 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['bt_setup'] = {
 		init: function() {
 			this.appendDummyInput()
-				.appendField("BLUETOOTH SETUP");
+				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/btico.png`,20,20,"*"))
+				.appendField("Bluetoothu Başlat");
 			this.appendDummyInput()
-				.appendField("BT İSMİ:  ")
-				.appendField(new Blockly.FieldTextInput("BT NAME"), "BTNAME");
+				.appendField("Bluetooth ismi:")
+				.appendField(new Blockly.FieldTextInput("Bluetooth"), "BTNAME");
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
 			this.setColour(230);
@@ -76,7 +67,8 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['bt_string'] = {
 		init: function() {
 			this.appendDummyInput()
-				.appendField("Bluetooth to String");
+				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/btprt.png`,20,20,"*"))
+				.appendField("Bluetooth verisini yazdır");
 			this.setOutput(true, "String");
 			this.setColour(230);
 			this.setTooltip("");
@@ -88,7 +80,9 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['kivvi_screen_setup'] = {
 		init: function() {
 			this.appendDummyInput()
-				.appendField("SCREEN SETUP");
+				.setAlign(Blockly.ALIGN_CENTRE)
+				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/screenset.png`,20,20,"*"))
+				.appendField("Ekranı Çalıştır");
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
 			this.setColour(0);
@@ -102,12 +96,14 @@ module.exports = function (Blockly) {
 			this.appendValueInput("STRNG","TOSCREEN")
 				.setCheck("String")
 				.setAlign(Blockly.ALIGN_CENTRE)
-				.appendField("EKRANA YAZDIR")
-				.appendField("SATIR:")
-				.appendField(new Blockly.FieldDropdown([["1","1"], ["2","2"], ["3","3"], ["4","4"], ["5","5"], ["6","6"], ["7","7"], ["8","8"]]), "SCVAL");
+				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/screenprint.png`,20,20,"*"))
+				.appendField(new Blockly.FieldDropdown([["1.","1"], ["2.","2"], ["3.","3"], ["4.","4"], ["5.","5"], ["6.","6"], ["7.","7"], ["8.","8"]]), "SCVAL")
+				.appendField("Satıra");
+			this.appendDummyInput()
+				.appendField("Yazdır");
 			this.setInputsInline(true);
 			this.setPreviousStatement(true);
-			this.setNextStatement(true, "String");
+			this.setNextStatement(true);
 			this.setColour(0);
 			this.setTooltip("");
 			this.setHelpUrl("");
@@ -117,8 +113,9 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['kivvi_battery_read'] = {
 		init: function() {
 			this.appendDummyInput()
-				.appendField("BATTERY READ");
-			this.setOutput(true, "String");
+				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/battery.png`,20,20,"*"))
+				.appendField("Kalan batarya bilgisi");
+			this.setOutput(true);
 			this.setColour(basic_colour);
 			this.setTooltip("");
 			this.setHelpUrl("");
@@ -245,6 +242,7 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['kivvi_screen_clear'] = {
 		init: function() {
 			this.appendDummyInput()
+				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/screenico.png`,20,20,"*"))
 				.appendField("Ekranı Temizle");
 			this.setInputsInline(true);
 			this.setPreviousStatement(true);
@@ -258,6 +256,7 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['kivvi_screen_send'] = {
 		init: function() {
 			this.appendDummyInput()
+				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/screenico.png`,20,20,"*"))
 				.appendField("Ekranı Göster");
 			this.setInputsInline(true);
 			this.setPreviousStatement(true);

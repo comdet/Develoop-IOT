@@ -1,13 +1,18 @@
 #include <Arduino.h>
+#include "AiEsp32RotaryEncoder.h"
 #include "U8g2lib.h"
 #include <Wire.h>
-#include "BluetoothSerial.h"
-#include "moves.c"
 
 
+AiEsp32RotaryEncoder rotaryEncoder = AiEsp32RotaryEncoder(32, 35, 33);
 U8G2_SSD1306_128X64_NONAME_F_SW_I2C u8g2(U8G2_R0, 15, 4, 16);
-BluetoothSerial SerialBT;
 
+int rotary_delta() {
+  				int16_t encoderDelta = rotaryEncoder.encoderChanged();
+  				if (encoderDelta > 0) return 1;
+  				else if (encoderDelta < 0) return -1;
+  				else return 0;
+  			}
 void toScreen(int satir, String wrd)
   			{
   			  if (wrd != "")
@@ -18,30 +23,24 @@ void toScreen(int satir, String wrd)
   				u8g2.print(wrd);                        // write something to the internal memory
   			  }
   			}
-String bluetoothString() //char olarak gelen message strin haline getiriliyor
-  			{
-  			  char c;
-  			  String str = "";
-  			  do
-  			  {
-  				c = 0;
-  				if (SerialBT.available()) c = SerialBT.read();
-  				if (c != 0)
-  				{
-  				  str += c;
-  				}
-  			  } while (c != 13 && c != 0);
-  			  return str;
-  			}
 
 
 void setup()
 {
-  u8g2.begin();
-  SerialBT.begin("BT NAME");motorSetup();
+  rotaryEncoder.begin();
+  			rotaryEncoder.setup([] {rotaryEncoder.readEncoder_ISR();});
+  			rotaryEncoder.setBoundaries(-1000, 1000, true);
+u8g2.begin();
+  
 }
 void loop()
 {
-    toScreen(1, String("dsfsfsfsfsf"));fwd();
-  
+    			
+  if (millis() > 20000) rotaryEncoder.enable ();
+rotaryEncoder.setBoundaries(-1000, 1000, true);
+if(rotaryEncoder.currentButtonState() == BUT_PUSHED){
+        if ((rotary_delta()) == (rotaryEncoder.readEncoder())) {
+      u8g2.clearBuffer();toScreen(1, String("Hello World!"));u8g2.sendBuffer();}
+
+    }
 }

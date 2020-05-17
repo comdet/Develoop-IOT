@@ -128,6 +128,7 @@ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\build\ff-ff-ff
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/HardwareSerial.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/Esp.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include/pins_arduino.h \
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include/AiEsp32RotaryEncoder.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include/U8g2lib.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/Print.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include/U8x8lib.h \
@@ -136,8 +137,4 @@ C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\build\ff-ff-ff
  C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include/clib/u8x8.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\libraries_include/Wire.h \
  C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\include/esp32-hal.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\inc/freertos/queue.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\lib\libraries_include/BluetoothSerial.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\inc/esp_spp_api.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\inc/esp_bt_defs.h \
- C:\Users\Dilaver\AppData\Local\Programs\kbide\boards\Develoop-IOT\include/moves.c
+ C:\Users\Dilaver\AppData\Local\Programs\kbide\platforms\arduino-esp32\sdk\include\inc/freertos/queue.h

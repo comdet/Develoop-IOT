@@ -53,6 +53,46 @@ module.exports = {
       ]
     },
 	{
+      name: "Rotary Encoder",
+      color: "230",
+      icon: `file:///${dirIcon}/static/icons/genel.png`,
+      blocks: [
+	  {
+                    xml : 
+                    `<block type="rotary_setup">
+                        <value name="ALT">
+                            <shadow type="math_number">
+                                <field name="NUM">-1000</field>
+                            </shadow>
+                        </value>
+						<value name="UST">
+                            <shadow type="math_number">
+                                <field name="NUM">1000</field>
+                            </shadow>
+                        </value>
+                    </block>`
+      },
+	  {
+                    xml : 
+                    `<block type="rotary_set_bound">
+                        <value name="ALT">
+                            <shadow type="math_number">
+                                <field name="NUM">-1000</field>
+                            </shadow>
+                        </value>
+						<value name="UST">
+                            <shadow type="math_number">
+                                <field name="NUM">1000</field>
+                            </shadow>
+                        </value>
+                    </block>`
+      },
+	  "rotary_read",
+	  "rotary_delta",
+	  "rotary_button"
+      ]
+    },
+	{
       name: "Müzik",
       color: "230",
       icon: `file:///${dirIcon}/static/icons/song.png`,

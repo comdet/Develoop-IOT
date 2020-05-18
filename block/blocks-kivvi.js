@@ -247,7 +247,7 @@ module.exports = function (Blockly) {
 			this.appendDummyInput()
 				.appendField("Mesafe'yi HC-SR04p")
 				.appendField("kullanarak hesapla");
-			this.setOutput(true);
+			this.setOutput(true, "Number");
 			this.setColour(135);
 			this.setTooltip("Mesafeyi hesaplamak için kullanılır.");
 			this.setHelpUrl("http://kivblocks.kivvi.com.tr");

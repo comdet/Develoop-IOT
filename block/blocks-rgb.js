@@ -66,14 +66,35 @@ module.exports = function(Blockly) {
   Blockly.Blocks["kivvi_rgb_setPixelColor"] = {
     init: function() {
       this.appendValueInput("NUM")
-      .appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/1601900.png`,20,20,"*"))
+		.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/1601900.png`,20,20,"*"))
         .setCheck("Number")
-        .appendField("RGB Led Pixel:");
+        .appendField("RGB LED Pixel:");
       this.appendDummyInput()
         .appendField("Rengi")
         .appendField(new Blockly.FieldColour("#FFFFFF"), "COLOR");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
+      this.setColour(65);
+      this.setTooltip("");
+      this.setHelpUrl("");
+    }
+  };
+  
+  Blockly.Blocks["kivvi_rgb_setPixelCode"] = {
+    init: function() {
+      this.appendValueInput("R")
+		.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/1601900.png`,20,20,"*"))
+		.appendField("RGB LED Pixel:")
+		.appendField(new Blockly.FieldDropdown([["SOL","0"], ["SAĞ","1"]]), "DIR")
+		.appendField("Ayarla")
+		.appendField("R:");
+	  this.appendValueInput("G")
+		.appendField("G:");
+	  this.appendValueInput("B")
+		.appendField("B:");
+      this.setPreviousStatement(true, null);
+      this.setNextStatement(true, null);
+	  this.setInputsInline(true);
       this.setColour(65);
       this.setTooltip("");
       this.setHelpUrl("");

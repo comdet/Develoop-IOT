@@ -85,6 +85,20 @@ module.exports = function(Blockly) {
   `;
     return code;
   };
+  
+  Blockly.JavaScript["kivvi_rgb_setPixelCode"] = function(block) {
+	
+    var red = valueToCode(block, "R", ORDER_ATOMIC);
+	var green = valueToCode(block, "G", ORDER_ATOMIC);
+	var blue = valueToCode(block, "B", ORDER_ATOMIC);
+	var dir = block.getFieldValue('DIR');
+    var code =
+      `
+  pixels.setPixelColor(${dir}, pixels.Color(${red}, ${green}, ${blue}));
+  pixels.show();
+  `;
+    return code;
+  };
 
   Blockly.JavaScript["kivvi_rgb_fillLED"] = function(block) {
     var value_color = block.getFieldValue("COLOR");

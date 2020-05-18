@@ -272,7 +272,7 @@ module.exports = function (Blockly) {
 				.appendField("QRD1117 seç")
 				.appendField(new Blockly.FieldDropdown([["midQRD","midQRD"], ["leftQRD","leftQRD"], ["rightQRD","rightQRD"]]), "QRD");
 			this.setInputsInline(true);
-			this.setOutput(true, "Boolean");
+			this.setOutput(true, "Number");
 			this.setColour(135);
 			this.setTooltip("???");
 			this.setHelpUrl("http://www.kivvi.com.tr");

@@ -190,6 +190,26 @@ module.exports = {
 		},
 		{
 		  xml:
+			`<block type="kivvi_rgb_setPixelCode">
+							<value name="R">
+								<shadow type="math_number">
+									<field name="NUM">255</field>
+								</shadow>
+							</value>
+							<value name="G">
+								<shadow type="math_number">
+									<field name="NUM">255</field>
+								</shadow>
+							</value>
+							<value name="B">
+								<shadow type="math_number">
+									<field name="NUM">255</field>
+								</shadow>
+							</value>
+						</block>`
+		},
+		{
+		  xml:
 			`<block type="kivvi_rgb_colorWipe">
 							<value name="TIME">
 								<shadow type="math_number">

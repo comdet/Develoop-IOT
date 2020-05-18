@@ -48,8 +48,52 @@ module.exports = {
       color: "230",
       icon: `file:///${dirIcon}/static/icons/motor.png`,
       blocks: [
-		"kivvi_motor_setup",
-		"kivvi_motor_dir"
+		"motor_setup",
+		{
+                    xml : 
+                    `<block type="motor_fwd_dt">
+                        <value name="VALUE">
+                            <shadow type="math_number">
+                                <field name="NUM">10</field>
+                            </shadow>
+                        </value>
+                    </block>`
+        },
+		{
+                    xml : 
+                    `<block type="motor_bwd_dt">
+                        <value name="VALUE">
+                            <shadow type="math_number">
+                                <field name="NUM">10</field>
+                            </shadow>
+                        </value>
+                    </block>`
+        },
+		{
+                    xml : 
+                    `<block type="motor_rgt_dt">
+                        <value name="VALUE">
+                            <shadow type="math_number">
+                                <field name="NUM">10</field>
+                            </shadow>
+                        </value>
+                    </block>`
+        },
+		{
+                    xml : 
+                    `<block type="motor_lft_dt">
+                        <value name="VALUE">
+                            <shadow type="math_number">
+                                <field name="NUM">10</field>
+                            </shadow>
+                        </value>
+                    </block>`
+        },
+		"motor_fwd_speed",
+		"motor_bwd_speed",
+		"motor_rgt_speed",
+		"motor_lft_speed",
+		"motor_stop"
       ]
     },
 	{

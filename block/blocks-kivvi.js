@@ -36,18 +36,6 @@ module.exports = function (Blockly) {
 	};
 	
 	
-	Blockly.Blocks['kivvi_motor_setup'] = {
-		init: function() {
-			this.appendDummyInput()
-				.appendField("Motor Setup");
-			this.setPreviousStatement(true);
-			this.setNextStatement(true);
-			this.setColour(180);
-			this.setTooltip("Motorları ayarlar.");
-			this.setHelpUrl("");
-		}
-	};
-	
 	Blockly.Blocks['bt_setup'] = {
 		init: function() {
 			this.appendDummyInput()
@@ -226,19 +214,6 @@ module.exports = function (Blockly) {
 		}
 	};
 	
-	Blockly.Blocks['kivvi_motor_dir'] = {
-		init: function() {
-			this.appendDummyInput()
-				.appendField("Şu yöne git:")
-				.appendField(new Blockly.FieldDropdown([["İLERİ","fwd()"], ["GERİ","bwd()"], ["SAĞ","rgt()"], ["SOL","lft()"], ["DUR","stp()"], ["SAĞ TAM","rgt0()"], ["SOL TAM","lft0()"]]), "DIR");
-			this.setInputsInline(true);
-			this.setPreviousStatement(true);
-			this.setNextStatement(true);
-			this.setColour(180);
-			this.setTooltip("Led yakmak ve söndürmek için kullanılır");
-			this.setHelpUrl("http://www.kivvi.com.tr");
-		}
-	};
 	Blockly.Blocks['kivvi_screen_clear'] = {
 		init: function() {
 			this.appendDummyInput()

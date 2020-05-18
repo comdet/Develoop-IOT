@@ -4,6 +4,7 @@ module.exports = function (Blockly) {
 Blockly.JavaScript['rotary_setup'] = function(block) {
 		var alt = Blockly.JavaScript.valueToCode(block, 'ALT', Blockly.JavaScript.ORDER_NONE);
 		var ust = Blockly.JavaScript.valueToCode(block, 'UST', Blockly.JavaScript.ORDER_NONE);
+		var checkbox_sorgu = (block.getFieldValue('SORGU') == 'TRUE')? 'true' : 'false';
 		let code = 
 			`#EXTINC#include "AiEsp32RotaryEncoder.h"#END
 			#VARIABLEAiEsp32RotaryEncoder rotaryEncoder = AiEsp32RotaryEncoder(32, 35, 33);#END
@@ -18,7 +19,7 @@ Blockly.JavaScript['rotary_setup'] = function(block) {
 			#SETUP
 			rotaryEncoder.begin();
 			rotaryEncoder.setup([] {rotaryEncoder.readEncoder_ISR();});
-			rotaryEncoder.setBoundaries(`+alt+`, `+ust+`, true);
+			rotaryEncoder.setBoundaries(`+alt+`, `+ust+`, ${checkbox_sorgu});
 			#END
 			#LOOP_EXT_CODEif (millis() > 20000) rotaryEncoder.enable ();#END
 			`;
@@ -29,8 +30,9 @@ Blockly.JavaScript['rotary_setup'] = function(block) {
 Blockly.JavaScript['rotary_set_bound'] = function(block) {
 		var alt = Blockly.JavaScript.valueToCode(block, 'ALT', Blockly.JavaScript.ORDER_NONE);
 		var ust = Blockly.JavaScript.valueToCode(block, 'UST', Blockly.JavaScript.ORDER_NONE);
+		var checkbox_sorgu = (block.getFieldValue('SORGU') == 'TRUE')? 'true' : 'false';
 		let code = 
-			`#LOOP_EXT_CODE rotaryEncoder.setBoundaries(`+alt+`, `+ust+`, true);#END
+			`#LOOP_EXT_CODE rotaryEncoder.setBoundaries(`+alt+`, `+ust+`, ${checkbox_sorgu});#END
 			`;
 			
    return code;

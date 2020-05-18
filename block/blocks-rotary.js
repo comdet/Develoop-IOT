@@ -8,13 +8,20 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['rotary_setup'] = {
 		init: function() {
 			this.appendDummyInput()
-				.appendField("Rotary Encoder Ayarla");
+				.appendField("Rotary Encoder Ayarları");
+			this.appendDummyInput()
+				.setAlign(Blockly.ALIGN_RIGHT)
+				.appendField("Sınır Değerlerini Ayarla ↓");
 			this.appendValueInput("ALT")
 				.setAlign(Blockly.ALIGN_RIGHT)
 				.appendField("Alt Sınır:");
 			this.appendValueInput("UST")
 				.setAlign(Blockly.ALIGN_RIGHT)
 				.appendField("Üst Sınır:");
+			this.appendDummyInput()
+				.setAlign(Blockly.ALIGN_RIGHT)
+				.appendField("Döngü:")
+				.appendField(new Blockly.FieldCheckbox("TRUE"), "SORGU");
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
 			this.setColour(230);
@@ -31,6 +38,10 @@ module.exports = function (Blockly) {
 			this.appendValueInput("UST")
 				.setAlign(Blockly.ALIGN_RIGHT)
 				.appendField("Üst Sınır:");
+			this.appendDummyInput()
+				.setAlign(Blockly.ALIGN_RIGHT)
+				.appendField("Döngü:")
+				.appendField(new Blockly.FieldCheckbox("TRUE"), "SORGU");
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
 			this.setColour(230);

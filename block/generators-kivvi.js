@@ -121,12 +121,6 @@ Blockly.JavaScript['kivvi_dist'] = function(block) {
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
-Blockly.JavaScript['kivvi_motor_setup'] = function(block) {
-	let code = 
-			`#EXTINC#include "moves.c"#END`;
-	code += 'motorSetup();';
-   return code;
-};
 	
 Blockly.JavaScript['kivvi_battery_read'] = function(block) {
   var code = 'analogRead(39)';
@@ -146,14 +140,6 @@ Blockly.JavaScript['kivvi_buzzer32'] = function(block) {
 	return code;
 };
 
-Blockly.JavaScript['kivvi_motor_dir'] = function(block) {
-  
-	let dir = block.getFieldValue('DIR');
-  
-	let code = ''+dir+';';
-		
-	return code;
-};
 
 Blockly.JavaScript['kivvi_hcsr04p'] = function(block) {
   

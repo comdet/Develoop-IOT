@@ -8,6 +8,7 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['rotary_setup'] = {
 		init: function() {
 			this.appendDummyInput()
+				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/encodersetup.png`,20,20,"*"))
 				.appendField("Rotary Encoder Ayarları");
 			this.appendDummyInput()
 				.setAlign(Blockly.ALIGN_RIGHT)
@@ -33,6 +34,7 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['rotary_set_bound'] = {
 		init: function() {
 			this.appendValueInput("ALT")
+				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/encodericon.png`,20,20,"*"))
 				.appendField("Sınırları Ayarla →")
 				.appendField("Alt Sınır:");
 			this.appendValueInput("UST")
@@ -55,6 +57,7 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['rotary_read'] = {
 		init: function() {
 			this.appendDummyInput()
+				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/encodericon.png`,20,20,"*"))
 				.appendField("Encoder oku");
 			this.setOutput(true);
 			this.setColour(135);
@@ -67,6 +70,7 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['rotary_delta'] = {
 		init: function() {
 			this.appendDummyInput()
+				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/encodericon.png`,20,20,"*"))
 				.appendField("Delta oku");
 			this.setOutput(true);
 			this.setColour(135);
@@ -78,6 +82,7 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['rotary_button'] = {
 		init: function() {
 			this.appendDummyInput()
+				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/encoderbutton.png`,20,20,"*"))
 				.appendField("Rotary Buton")
 				.appendField(new Blockly.FieldDropdown([["Basıldığında","BUT_PUSHED"], ["Bırakıldığında","BUT_RELEASED"]]), "STATUS")
 			this.appendStatementInput("event_do")

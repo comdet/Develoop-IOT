@@ -99,7 +99,7 @@ module.exports = {
 	{
       name: "Rotary Encoder",
       color: "230",
-      icon: `file:///${dirIcon}/static/icons/genel.png`,
+      icon: `file:///${dirIcon}/static/icons/encoder.png`,
       blocks: [
 	  {
                     xml : 

@@ -8,5 +8,5 @@ module.exports = {
   email: "bilgi@kivvi.com.tr",
   git: "https://github.com/halildilaver/Develoop-IOT",
   image: "/static/display.jpg",
-  version: "1.18520.2",
+  version: "1.18520.3",
 };

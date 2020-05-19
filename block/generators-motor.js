@@ -9,10 +9,7 @@ Blockly.JavaScript['motor_setup'] = function(block) {
 };
 
 Blockly.JavaScript['motor_stop'] = function(block) {
-	let code = 
-			`#LOOP_EXT_CODE 
-			stp();
-			#END`;
+	let code = 'stp();';
    return code;
 };
 
@@ -20,10 +17,8 @@ Blockly.JavaScript['motor_fwd_dt'] = function(block) {
 	var speed = block.getFieldValue('SPEED');
 	var cins = block.getFieldValue('CINS');
 	var val = Blockly.JavaScript.valueToCode(block, 'VALUE', Blockly.JavaScript.ORDER_NONE);
-	let code = 
-			`#LOOP_EXT_CODE 
-			fwd`+cins+`(`+speed+`,`+val+`);
-			#END`;
+	let code = 'fwd'+cins+'('+speed+','+val+');';
+			
 			
    return code;
 };
@@ -32,30 +27,21 @@ Blockly.JavaScript['motor_bwd_dt'] = function(block) {
 	var speed = block.getFieldValue('SPEED');
 	var cins = block.getFieldValue('CINS');
 	var val = Blockly.JavaScript.valueToCode(block, 'VALUE', Blockly.JavaScript.ORDER_NONE);
-	let code = 
-			`#LOOP_EXT_CODE 
-			bwd`+cins+`(`+speed+`,`+val+`);
-			#END`;
+	let code = 'bwd'+cins+'('+speed+','+val+');';
 			
    return code;
 };
 
 Blockly.JavaScript['motor_fwd_speed'] = function(block) {
 	var speed = block.getFieldValue('SPEED');
-	let code = 
-			`#LOOP_EXT_CODE 
-			fwd(`+speed+`);
-			#END`;
+	let code = 'fwd('+speed+');';
 			
    return code;
 };
 
 Blockly.JavaScript['motor_bwd_speed'] = function(block) {
 	var speed = block.getFieldValue('SPEED');
-	let code = 
-			`#LOOP_EXT_CODE 
-			bwd(`+speed+`);
-			#END`;
+	let code = 'bwd('+speed+');';
 			
    return code;
 };
@@ -65,10 +51,7 @@ Blockly.JavaScript['motor_rgt_dt'] = function(block) {
 	var speed = block.getFieldValue('SPEED');
 	var cins = block.getFieldValue('CINS');
 	var val = Blockly.JavaScript.valueToCode(block, 'VALUE', Blockly.JavaScript.ORDER_NONE);
-	let code = 
-			`#LOOP_EXT_CODE 
-			rgt`+cins+``+mod+`(`+speed+`,`+val+`);
-			#END`;
+	let code = 'rgt'+cins+''+mod+'('+speed+','+val+');';
 			
    return code;
 };
@@ -78,10 +61,7 @@ Blockly.JavaScript['motor_lft_dt'] = function(block) {
 	var speed = block.getFieldValue('SPEED');
 	var cins = block.getFieldValue('CINS');
 	var val = Blockly.JavaScript.valueToCode(block, 'VALUE', Blockly.JavaScript.ORDER_NONE);
-	let code = 
-			`#LOOP_EXT_CODE 
-			lft`+cins+``+mod+`(`+speed+`,`+val+`);
-			#END`;
+	let code = 'lft'+cins+''+mod+'('+speed+','+val+');';
 			
    return code;
 };
@@ -89,10 +69,7 @@ Blockly.JavaScript['motor_lft_dt'] = function(block) {
 Blockly.JavaScript['motor_rgt_speed'] = function(block) {
 	var mod = block.getFieldValue('MOD');
 	var speed = block.getFieldValue('SPEED');
-	let code = 
-			`#LOOP_EXT_CODE 
-			rgt`+mod+`(`+speed+`);
-			#END`;
+	let code = 'rgt'+mod+'('+speed+');';
 			
    return code;
 };
@@ -100,10 +77,7 @@ Blockly.JavaScript['motor_rgt_speed'] = function(block) {
 Blockly.JavaScript['motor_lft_speed'] = function(block) {
 	var mod = block.getFieldValue('MOD');
 	var speed = block.getFieldValue('SPEED');
-	let code = 
-			`#LOOP_EXT_CODE 
-			lft`+mod+`(`+speed+`,`+val+`);
-			#END`;
+	let code = 'lft'+mod+'('+speed+','+val+');';
 			
    return code;
 };

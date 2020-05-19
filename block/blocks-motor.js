@@ -131,7 +131,7 @@ module.exports = function (Blockly) {
 				.appendField(new Blockly.FieldDropdown([["5","5"], ["6","6"], ["7","7"], ["8","8"], ["9","9"], ["10","10"]]), "SPEED")
 				.appendField("Hızıyla");
 			this.appendDummyInput()
-				.appendField(new Blockly.FieldDropdown([["Derece","Dist"], ["Saniye","Time"]]), "CINS")
+				.appendField(new Blockly.FieldDropdown([["Derece","Degree"], ["Saniye","Time"]]), "CINS")
 				.appendField("dön");
 			this.setInputsInline(true);
 			this.setPreviousStatement(true);

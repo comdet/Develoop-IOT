@@ -77,7 +77,7 @@ Blockly.JavaScript['motor_rgt_speed'] = function(block) {
 Blockly.JavaScript['motor_lft_speed'] = function(block) {
 	var mod = block.getFieldValue('MOD');
 	var speed = block.getFieldValue('SPEED');
-	let code = 'lft'+mod+'('+speed+','+val+');';
+	let code = 'lft'+mod+'('+speed+');';
 			
    return code;
 };
